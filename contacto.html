@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <nav id="nav">
+        <img class="imagen-cabecera" src="img/logotipo-ateismo-diseno-plano-dibujado-mano.png" alt="Logo">
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="envioNacional.html">Envío Nacional</a></li>
+            <li><a href="envioInternacional.html">Envío Internacional</a></li>
+            <li class="rojo"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+    <div class="container col-12">
+        <h1>REGISTRO DE USUARIO</h1>
+        <p>A continuación, indique los datos solicitados para darse de alta en nuestro sistema</p>
+        <p>[Los datos marcados con <span class="marcador-rojo">*</span> son obligatorios]</p>
+
+        <form action="" id="registroForm" onsubmit="return validarFormulario()">
+
+        <p class="form-gropu">
+            <label for="nombre">Nombre <span class="marcador-rojo">*</span></label>
+            <input type="text" id="nombre" name="nombre">
+        </p>
+        <div class="nombreError marcador-rojo msn"></div>
+        <!-- Apellido -->
+        <p class="form-gropu">
+            <label for="apellido">Apellido <span class="marcador-rojo">*</span></label>
+            <input type="text" id="apellido" name="apellido">
+        </p>
+        <div class="apellidoError marcador-rojo msn"></div>
+
+        <!-- Edad -->
+        <p class="form-gropu">
+            <label for="edad">Edad <span class="marcador-rojo">*</span></label>
+            <input type="text" id="edad" name="edad" maxlength="3">
+        </p>
+        <div class="edadError marcador-rojo msn"></div>
+
+        <!-- Teléfono -->
+        <p class="form-gropu">
+            <label for="telefono">Teléfono <span class="marcador-rojo">*</span></label>
+            <input type="text" id="telefono" name="telefono" maxlength="9">
+        </p>
+        <div class="telefonoError marcador-rojo msn"></div>
+
+        <!-- Email -->
+        <p class="form-gropu">
+            <label for="email">Email <span class="marcador-rojo">*</span></label>
+            <input type="email" id="email" name="email">
+        </p>
+        <div class="emailError marcador-rojo msn"></div>
+
+        <!-- Dirección -->
+        <p class="form-gropu">
+            <label for="direccion">Dirección </label>
+            <input type="text" id="direccion" name="direccion">
+        </p>
+
+        <!-- Contraseña -->
+        <p class="form-gropu">
+            <label for="pass1">Contraseña <span class="marcador-rojo">*</span></label>
+            <input type="password" id="pass1" name="pass1">
+        </p>
+        <div class="pass1Error marcador-rojo msn"></div>
+
+
+        <!-- Contraseña 2 -->
+        <p class="form-gropu">
+            <label for="pass2">Repetir Contraseña <span class="marcador-rojo">*</span></label>
+            <input type="password" id="pass2" name="pass2">
+        </p>
+        <div class="pass2Error marcador-rojo msn"></div>   
+
+        <p>
+            <input type="submit" value="Registrar" class="boton izquierda">
+            <input type="reset" value="Borrar" class="boton derecha" id="reset">
+        </p>
+
+    </form>
+
+
+    </div>
+</section>
+    
+    <script src="js/js.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
